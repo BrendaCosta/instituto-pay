@@ -17,14 +17,25 @@
             <li><span>03.</span>Diferenciais</li>
             <li><span>04.</span>Contato</li>
         </ul>
+        <ion-icon name="menu-outline" class="menu-mobile" onclick="abrirMenu()"></ion-icon>
     </nav>
+    
+      
+        <ul class="menu-mobile-itens">
+            <li><span>01.</span>Home</li>
+            <li><span>02.</span>Quem Usa?</li>
+            <li><span>03.</span>Diferenciais</li>
+            <li><span>04.</span>Contato</li>
+        </ul>
+       
+    
     <div class="banner">
         <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit.</h1>
         <button>Saiba mais</button>
     </div>
-    <main>
+   
         
-        <section>
+        <div class="aplicativo">
             <div class="info">
             <h2><span class="numeros">01.</span>Tudo começa com uma marca forte.</h2>
                 <p class="diferenciais">Pagamentos</p>
@@ -39,13 +50,14 @@
                 <img src="/img/celularbanner.png" alt="">
             </div>
     
-        </section>
+        </div>
         <div class="usuarios">
             <h2>Quem usa?</h2>
             
                 <div class="tipos-usuarios">
                     <div class="tipo-usuario">
                         <img src="./img/imgquemusa1.png" alt="">
+                        <div class="filtro"></div>
                         <h4 class="usuario">Estudantes</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
                     </div>
@@ -97,6 +109,7 @@
     
         <div class="app">
             <div class="bg-vermelho">
+               <div class="linhas-brancas"> </div>
                 <img src="./img/celulardeitado.png" alt="" class="celular">
                 <div class="info">
                     <h2><span class="numeros">02.</span>Agilidade na mão</h2>
@@ -106,7 +119,8 @@
                             <img src="./img/Botões App-1.png" alt="">
                             <img src="./img/Botões App.png" alt="" srcset="">
                         </div>
-                </div>
+               </div>
+                
             </div>
     
         </div>
@@ -158,7 +172,7 @@
                             <label for="">Email</label>
                         <input type="email" name="" id="" placeholder="Digite seu e-mail">
                         </div>
-                        <button>Enviar <img src="./img/paper-plane.svg" alt=""></button>
+                        <button>Enviar <ion-icon name="paper-plane"></ion-icon></button>
                     </div>
                     <div class="lojas">
                         <h3>Baixe o app</h3>
@@ -167,15 +181,25 @@
                     </div>
                 </div>
             </div>
-            <div class="copy">
-                <p>Todos os direitos reservados - 2021</p>
-                <p>Instituto Pay</p>
-            </div>
+           
         </footer>
-    </main>
+        <div class="copy">
+            <p>Todos os direitos reservados - 2021</p>
+            <p>Instituto Pay</p>
+        </div>
+
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+       
+        const menu_mobile_itens = document.querySelector('.menu-mobile-itens');
+        
+        function abrirMenu(){
+            menu_mobile_itens.classList.toggle('menu-mobile-ativo');         
+        }
+    </script>
 </body>
 </html>
